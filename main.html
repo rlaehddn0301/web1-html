@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <STyle>
+    <style>
         * {
-            margin: 0 auto;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            height: 200vb;
+            height: 200vh;
+            background-color: #F5F5F5;
         }
 
         ul {
             display: flex;
             justify-content: center;
-            text-align: center;
+            align-items: center;
             margin: 25px;
         }
 
         a {
-            color: white;
-            display: inline-block;
+            color: #121212;
             text-decoration: none;
         }
 
@@ -31,13 +32,21 @@
             display: inline-block;
             text-align: center;
             font-weight: bold;
-            font-size: 15px;
+            margin-right: 50px;
+            color: #121212;
+            font-size: 20px;
         }
 
-        header {
-            background-color: #121212;
-            padding: 0.5px;
-            display: inline block;
+        .top-header {
+            display: inline;
+            position: fixed;
+            background-color: #ffffff;
+            padding: 10px 0 0 0;
+            font-size: 20px;
+            width: 100%;
+            left: 0;
+            top: 0;
+            border-bottom: 1px solid rgb(175, 175, 175);
         }
 
         .main {
@@ -46,10 +55,11 @@
         }
 
         .card {
-            border: 2px solid #ddd;
-            border-radius: 10px 10px 0px 0px;
-            display: inline-block;
-            padding-bottom: 100px;
+            z-index: -1;
+        }
+
+        .tshoes {
+            margin-top: 40px;
         }
 
         hr {
@@ -68,42 +78,97 @@
             margin: 20px 30px 20px 30px;
         }
 
+        h1 {
+            font-size: 70px;
+            margin-top: 40px;
+        }
+
         h4 {
             text-align: center;
-            margin: 20px;
+            margin-top: 20px;
+        }
+
+        h6 {
+            text-align: center;
+            margin-top: 5px;           
+        }
+
+        p {
+            font-weight: bold;
+            margin-top: 15px;
         }
         
         .link {
-            color: black;
             text-decoration: none;
+            text-align: center;
         }
-    </STyle>
+
+        .button {
+            display: inline-block;
+            color: #ffffff;
+            background-color: #121212;
+            border: none;
+            border-radius: 40px;
+            padding: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+            z-index: -1;
+        }
+
+        #button {
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #121212;
+            padding: 150px;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
+    <header class="top-header">
         <div>
             <ul>
-                <li><a href="">
-                    <img src="nike3.png" width="65% auto"></a>
-                </li>
+                <div class="img">
+                    <li><a href="">
+                        <img src="nike3.png" width="100px"></a>
+                    </li>
+                </div>
                 <li><a href="">New Releases</a></li>
                 <li><a href="">Man</a></li>
                 <li><a href="">Women</a></li>
                 <li><a href="">Kids</a></li>
                 <li><a href="">Sale</a></li>
                 <li><a href="">SNKRS</a></li>
-                <li><a href="">나이키 앱</a></li>
+                <li><a href="">나이키앱</a></li>
+                <li><a href="mentoring05_1.html">로그인</a></li>
             </ul>
         </div>
     </header>
-    <h4><a href="main.html" class="link">반품 및 환불 지연 안내</a></h4>
     <div class="main">
         <div class="card">
-            <h1 class="title">환영합니다!</h1>
-            <hr>
-            <p class="sub-title">설명설명</p>
-            <p class="text">나이키에 오신걸 환영합니다</p>
+            <img src="tiafo.jpg" width="85%">
+            <h1>승리에 취하다.</h1>
+            <p>마음껏 자신의 운명을 바꾸고 승리를 쟁취하는<br>
+                프란시스 티아포 선수의 열정이 담긴 스토리를 만나 보세요.
+                나이키 앱을 다운로드하고 <br>테니스를 관심사로 설정하세요.
+                </p>
+                <div class="button">
+                    <a id="button" href="">자세히보기</a>
+                </div>
+            <div class="tshoes">
+                <img src="tshoes.jpg" width="85%">
+                <h1>나이키코트 테니스화</h1>
+                <p>속도감 있는 컷 동작과 빠른 움직임에서도 완벽한 지지력을<br>
+                    서포트해주는 나이키코트 테니스화를 만나보세요.
+                    </p>
+                    <div class="button">
+                       <a id="button" href="">자세히보기</a>
+                    </div>
+            </div>
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>
