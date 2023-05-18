@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+
+            background-color: gray;
+            min-width: 200px;
+            padding: 30px;
+            box-shadow: 0px 20px 20px 0px gray;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .btn-hover {
+            padding: 10px 20px 10px 10px;
+            border: none;
+            border-radius: 20px;
+            margin-top: 20px;
+            background-color: cornflowerblue;
+            color: rgb(255, 255, 255);
+        }
+
+        .btn-hover:hover {
+            background-color: blue;
+            color: black;
+        }
+
+        h1:hover {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS:hover</h1>
+    <hr>
+    <div class="dropdown">
+        <span>마우스를 올려주세요.</span>
+        <div class="dropdown-content">
+            <p><a href="index.html">index.html</a></p>
+        </div>
+    </div>
+    <div>
+        <button class="btn-hover">hellow</button>
+    </div>
+</body>
+</html>
