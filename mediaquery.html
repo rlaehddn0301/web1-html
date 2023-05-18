@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        .small {
+            background-color: cornflowerblue;
+            text-align: center;
+            padding: 200px;
+
+            margin-top: 50px;
+        }
+
+        @media (max-width : 420px) {
+            .small {
+                display: none;
+            }
+            
+        }
+
+        @media (max-width : 1000px) {
+            .small {
+                background-color: darkblue;
+            }
+        }
+
+        @media (min-width : 1000px) {
+            .small {
+                color: rgb(255, 255, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>미디어 쿼리</h1>
+    <hr>
+      <div class="small">화면 크기에 따라 색이 변한다</div>
+</body>
+</html>
