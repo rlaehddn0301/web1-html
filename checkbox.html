@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이키에 오신걸 환영합니다.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            height: 100%;
+            margin-top: 100px;
+        }
+
+        .nike {
+            display: flex;
+            margin-bottom: 70px;
+        }
+
+        .change {
+            margin-top: 20px;
+        }
+
+        .privacy {
+            margin-top: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 30px 10px 30px;
+            background-color: black;
+            color: #f0f0f0;
+            border: none;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: #686868;
+            border: none;
+        }
+
+        #country {
+            border: none;
+            border-radius: 20px;
+            padding: 15px 10px 15px 10px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .update {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            color: #686868;
+        }
+
+        .item {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .check {
+            margin-top: 40px;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            border: 3px solid gray;
+            margin: 10px;
+        }
+
+        p {
+            margin: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nike">
+            <img src="imgs/nike.png" width="100px">
+        </div>
+        <h1>계속 진행하시려면 아래 권한에 동의 해 주세요.</h1>
+        <div class="item">
+            <b>* 필수 항목</b>
+        </div>
+        <div class="update">
+        나이키에 오신 것을 환영합니다! 법률 약관이 업데이트되었습니다<div class="br"></div> 
+            진행하시기 전에 내용을 검토하고 동의해 주세요.
+        </div>
+        <hr>
+        <div class="check">
+            <form method="post">
+                <p id="f"><label><input type="checkbox" name="ch" value="모든 약관에 동의합니다." required>모든 약관에 동의합니다.</label></p>
+                <p><label><input type="checkbox" name="ch" value="이용약관에 동의합니다." required>이용약관에 동의합니다.</label></p>
+                <p><label><input type="checkbox" name="ch" value="개인 정보 수집 및 이용에 동의합니다." required>개인 정보 수집 및 이용에 동의합니다.</label></p>
+                <p><label><input type="checkbox" name="ch" value="개인 정보의 제3자 제공 및 국외 이전에 동의합니다" required>개인 정보의 제3자 제공 및 국외 이전에 동의합니다</label></p>
+            </form>
+        </div>
+        <div class="button-container">
+            <a href="membership.html"><button type="submit">계속</button></a>
+        </div>
+    </header>
+</body>
+</html>
