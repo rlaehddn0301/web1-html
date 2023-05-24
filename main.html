@@ -21,32 +21,31 @@
             justify-content: center;
             align-items: center;
             margin: 25px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            flex-wrap: nowrap;
+            list-style-type: none;
         }
 
-        a {
-            color: #121212;
-            text-decoration: none;
-        }
-
-        #menu:hover {
-            color: #686868;
-            display: block;
-            background-color: rgb(255, 255, 255);
-            height: 300px;
-            padding: 30px;
-            justify-content: space-around;
+        ul::-webkit-scrollbar {
+            display: none;
         }
 
         li {
-            display: inline-block;
-            text-align: center;
-            font-weight: bold;
-            margin-right: 50px;
+            position: relative;
+            margin-right: 30px;
+            scroll-snap-align: start;
+        }
+
+        #menu {
             color: #121212;
-            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         .top-header {
+            display: inline-block;
             position: fixed;
             background-color: #ffffff;
             font-size: 20px;
@@ -78,7 +77,7 @@
             font-weight: bold;
             margin-top: 15px;
         }
-        
+
         .button-container {
             justify-content: center;
         }
