@@ -28,6 +28,11 @@
             text-decoration: none;
         }
 
+        a:hover {
+            color: #686868;
+            border-bottom: 2px solid #686868;
+        }
+
         li {
             display: inline-block;
             text-align: center;
@@ -39,6 +44,8 @@
 
         .top-header {
             position: fixed;
+            display: flex;
+            justify-content: center;
             background-color: #ffffff;
             padding: 2px 0 0 0;
             font-size: 20px;
@@ -89,20 +96,27 @@
             text-align: center;
         }
 
-        .button {
-            display: inline-block;
-            color: #ffffff;
-            background-color: #121212;
+        .button-container {
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 30px 10px 30px;
+            background-color: black;
+            color: #f0f0f0;
             border: none;
-            border-radius: 40px;
-            padding: 15px;
-            margin-top: 20px;
-            font-weight: bold;
-            z-index: -1;
+            border-radius: 30px;
+            margin-top: 50px;
+            font-size: 20px;
         }
 
         #button {
-            color: #ffffff;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #686868;
+            border: none;
         }
 
         footer {
@@ -118,7 +132,7 @@
             <ul>
                 <div class="img">
                     <li><a href="">
-                        <img src="nike3.png" width="100px"></a>
+                        <img src="imgs/nike3.png" width="100px"></a>
                     </li>
                 </div>
                 <li><a href="">New Releases</a></li>
@@ -129,28 +143,29 @@
                 <li><a href="">SNKRS</a></li>
                 <li><a href="">나이키앱</a></li>
                 <li><a href="mentoring05_1.html">로그인</a></li>
+                <li><a href="email.html">가입하기</a></li>
             </ul>
         </div>
     </header>
     <div class="main">
         <div class="tiafo">
-            <img src="tiafo.jpg" width="85%">
+            <img src="imgs/tiafo.jpg" width="85%">
             <h1>승리에 취하다.</h1>
             <p>마음껏 자신의 운명을 바꾸고 승리를 쟁취하는<br>
                 프란시스 티아포 선수의 열정이 담긴 스토리를 만나 보세요.
                 나이키 앱을 다운로드하고 <br>테니스를 관심사로 설정하세요.
                 </p>
                 <div class="button">
-                    <a id="button" href="">자세히보기</a>
-                </div>
+                    <a id="button" href=""><button class="button-container">자세히보기</button></a>
+                 </div>
             <div class="tshoes">
-                <img src="tshoes.jpg" width="85%">
+                <img src="imgs/tshoes.jpg" width="85%">
                 <h1>나이키코트 테니스화</h1>
                 <p>속도감 있는 컷 동작과 빠른 움직임에서도 완벽한 지지력을<br>
                     서포트해주는 나이키코트 테니스화를 만나보세요.
                     </p>
                     <div class="button">
-                       <a id="button" href="">자세히보기</a>
+                       <a id="button" href=""><button class="button-container">자세히보기</button></a>
                     </div>
             </div>
         </div>
