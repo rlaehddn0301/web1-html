@@ -14,98 +14,146 @@
         body {
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #F5F5F5;
         }
 
         header {
-            height: 100%;
-            margin-top: 100px;
+            text-align: left;
+            padding: 60px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .nike {
             display: flex;
-            margin-bottom: 70px;
+            margin-bottom: 20px;
+            justify-content: left;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #686868;
         }
 
         .change {
             margin-top: 20px;
+            color: #686868;
+        }
+
+        #country {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
         }
 
         .email {
-            width: 100%;
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
         .email input {
-            width: 100%;
-            padding: 20px;
+            width: 50%;
+            padding: 15px;
             border: 1px solid gray;
-            border-radius: 15px;
+            border-radius: 10px;
             background-color: transparent;
             outline: none;
-            font-size: 15px;
+            font-size: 14px;
         }
 
         .email input:hover {
             border: 2px solid #000000;
         }
 
-
         .privacy {
             margin-top: 40px;
+            font-size: 14px;
+            color: #686868;
         }
 
         .button-container {
-            justify-content: center;
             display: flex;
+            justify-content: flex-end;
         }
 
         button {
-            padding: 10px 30px 10px 30px;
-            background-color: black;
-            color: #f0f0f0;
+            padding: 10px 30px;
             border: none;
             border-radius: 15px;
-            margin-top: 100px;
             font-size: 20px;
+            background-color: black;
+            color: #F0F0F0;
         }
 
         button:hover {
-            background-color: #737373;
-            border: none;
+            background-color: #686868;
         }
 
-        #country {
-            border: none;
-            border-radius: 20px;
-            padding: 15px 10px 15px 10px;
-            margin-left: 20px;
-            font-size: 20px;
+        p {
+            margin-bottom: 30px;
         }
 
+        @media (max-width: 428px) {
+            header {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .change {
+                font-size: 14px;
+            }
+
+            #country {
+                font-size: 14px;
+            }
+
+            .email input {
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            .privacy {
+                font-size: 12px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 8px 24px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="nike">
-            <img src="imgs/nike.png" width="100px">
+            <img src="imgs/nike.png" width="100px" alt="Nike Logo">
         </div>
         <h1>가입 또는 로그인을 위해 이메일을 입력하세요.</h1>
-        <div class="change">국적을 선택하세요.
-            <select name="country" id="country" onclick="country()">
-                <option value="GH">대한민국</option>
-                <option value="GH">멕시코</option>
-                <option value="GH">캐나다</option>
-                <option value="GH">영국</option>
-                <option value="GH">중국</option>
-                <option value="GH">러시아</option>
+        <div class="change">
+            국적을 선택하세요.
+            <select name="country" id="country">
+                <option value="KR">대한민국</option>
+                <option value="MX">멕시코</option>
+                <option value="CA">캐나다</option>
+                <option value="UK">영국</option>
+                <option value="CN">중국</option>
+                <option value="RU">러시아</option>
                 <option value="US">미국</option>
                 <option value="JP">일본</option>
             </select>
         </div>
         <div class="email">
             <form action="main.html">
-                <input type="text" placeholder="이메일" name="username" id="username" required>
+                <input type="email" placeholder="이메일" name="username" id="username" required>
             </form>
         </div>
         <div class="privacy">
