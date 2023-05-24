@@ -28,9 +28,13 @@
             text-decoration: none;
         }
 
-        a:hover {
+        #menu:hover {
             color: #686868;
-            border-bottom: 2px solid #686868;
+            display: block;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            padding: 30px;
+            justify-content: space-around;
         }
 
         li {
@@ -44,10 +48,7 @@
 
         .top-header {
             position: fixed;
-            display: flex;
-            justify-content: center;
             background-color: #ffffff;
-            padding: 2px 0 0 0;
             font-size: 20px;
             width: 100%;
             top: 0;
@@ -59,10 +60,7 @@
             margin: 40px;
         }
 
-        .tiafo {
-            z-index: -1;
-        }
-
+        .tiafo,
         .tshoes {
             margin-top: 40px;
         }
@@ -76,32 +74,17 @@
             margin-top: 40px;
         }
 
-        h4 {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        h6 {
-            text-align: center;
-            margin-top: 5px;           
-        }
-
         p {
             font-weight: bold;
             margin-top: 15px;
         }
         
-        .link {
-            text-decoration: none;
-            text-align: center;
-        }
-
         .button-container {
             justify-content: center;
         }
 
         button {
-            padding: 10px 30px 10px 30px;
+            padding: 10px 30px;
             background-color: black;
             color: #f0f0f0;
             border: none;
@@ -110,18 +93,47 @@
             font-size: 20px;
         }
 
-        #button {
-            border: none;
-        }
-
         button:hover {
             background-color: #686868;
-            border: none;
         }
 
         footer {
             background-color: #121212;
             padding: 100px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .main {
+                margin: 20px;
+            }
+
+            .tiafo img,
+            .tshoes img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+
+            button {
+                font-size: 16px;
+                margin-top: 30px;
+                padding: 8px 24px;
+            }
+
+            footer {
+                padding: 50px;
+            }
         }
 
     </style>
@@ -130,20 +142,20 @@
     <header class="top-header">
         <div>
             <ul>
-                <div class="img">
-                    <li><a href="">
-                        <img src="imgs/nike3.png" width="100px"></a>
-                    </li>
-                </div>
-                <li><a href="">New Releases</a></li>
-                <li><a href="">Man</a></li>
-                <li><a href="">Women</a></li>
-                <li><a href="">Kids</a></li>
-                <li><a href="">Sale</a></li>
-                <li><a href="">SNKRS</a></li>
-                <li><a href="">나이키앱</a></li>
-                <li><a href="mentoring05_1.html">로그인</a></li>
-                <li><a href="email.html">가입하기</a></li>
+                <li>
+                    <a href="">
+                        <img src="imgs/nike3.png" width="100px">
+                    </a>
+                </li>
+                <li><a id="menu" href="">New Releases</a></li>
+                <li><a id="menu" href="">Man</a></li>
+                <li><a id="menu" href="">Women</a></li>
+                <li><a id="menu" href="">Kids</a></li>
+                <li><a id="menu" href="">Sale</a></li>
+                <li><a id="menu" href="">SNKRS</a></li>
+                <li><a id="menu" href="">나이키앱</a></li>
+                <li><a id="menu" href="mentoring05_1.html">로그인</a></li>
+                <li><a id="menu" href="email.html">가입하기</a></li>
             </ul>
         </div>
     </header>
@@ -153,20 +165,24 @@
             <h1>승리에 취하다.</h1>
             <p>마음껏 자신의 운명을 바꾸고 승리를 쟁취하는<br>
                 프란시스 티아포 선수의 열정이 담긴 스토리를 만나 보세요.
-                나이키 앱을 다운로드하고 <br>테니스를 관심사로 설정하세요.
-                </p>
-                <div class="button">
-                    <a id="button" href=""><button class="button-container">자세히보기</button></a>
-                 </div>
-            <div class="tshoes">
-                <img src="imgs/tshoes.jpg" width="85%">
-                <h1>나이키코트 테니스화</h1>
-                <p>속도감 있는 컷 동작과 빠른 움직임에서도 완벽한 지지력을<br>
-                    서포트해주는 나이키코트 테니스화를 만나보세요.
-                    </p>
-                    <div class="button">
-                       <a id="button" href=""><button class="button-container">자세히보기</button></a>
-                    </div>
+                나이키 앱을 다운로드하고<br>테니스를 관심사로 설정하세요.
+            </p>
+            <div class="button">
+                <a href="#">
+                    <button class="button-container">자세히 보기</button>
+                </a>
+            </div>
+        </div>
+        <div class="tshoes">
+            <img src="imgs/tshoes.jpg" width="85%">
+            <h1>나이키코트 테니스화</h1>
+            <p>속도감 있는 컷 동작과 빠른 움직임에서도 완벽한 지지력을<br>
+                서포트해주는 나이키코트 테니스화를 만나보세요.
+            </p>
+            <div class="button">
+                <a href="#">
+                    <button class="button-container">자세히 보기</button>
+                </a>
             </div>
         </div>
     </div>
