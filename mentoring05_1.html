@@ -34,7 +34,7 @@
     .form {
       background-color: white;
       border: 1px solid #ddd;
-      border-radius: 5px;
+      border-radius: 20px;
       padding: 40px;
       display: flex;
       flex-direction: column;
@@ -71,12 +71,30 @@
 
     .form a {
       font-size: 14px;
-      color: #444;
+      color: #727272;
       text-decoration: underline;
       margin-top: 20px;
-      transition: color 0.3s;
     }
 
+    a:hover {
+      color: #000000;
+    }
+
+    @media (max-width: 420px) {
+      .form {
+        width: 80%;
+        padding: 20px;
+      }
+
+      .form input[type="text"],
+      .form input[type="password"] {
+        font-size: 14px;
+      }
+
+      .form button[type="submit"] {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -88,9 +106,4 @@
         <input type="text" placeholder="아이디" name="username" id="username" required>
         <input type="password" placeholder="비밀번호" name="password" id="password" required>
         <button type="submit">로그인</button>
-        <a href="index.html">비밀번호를 잊으셨나요?</a>
-      </form>      
-    </div>
-  </div>
-</body>
-</html>
+        <a class="passward" href="index.html">비밀번호를 잊으셨나요?</a>
