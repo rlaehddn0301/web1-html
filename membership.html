@@ -14,155 +14,131 @@
         body {
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #F5F5F5;
         }
 
         header {
-            height: 100%;
-            margin-top: 100px;
+            text-align: left;
+            padding: 60px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .nike {
-            display: flex;
-            margin-bottom: 50px;
-        }
-
-        .change {
-            margin-top: 20px;
-        }
-
-        .passward {
-            width: 100%;
-            box-sizing: border-box;
-            border-radius: 15px;
-            background-color: #f0f0f0;
-            margin-top: 20px;
             margin-bottom: 20px;
         }
 
-        .passward input {
-            width: 100%;
-            padding: 20px;
-            border: none;
-            background-color: transparent;
-            outline: none;
-            font-size: 15px;
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #686868;
         }
 
-        .privacy {
-            margin-top: 40px;
+        .email {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select,
+        input[type="date"] {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            background-color: #F0F0F0;
+            outline: none;
+        }
+
+        .shopping {
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #686868;
+        }
+
+        .check {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #686868;
         }
 
         .button-container {
             display: flex;
             justify-content: flex-end;
-            margin-top: 30px;
         }
 
         button {
-            padding: 10px 30px 10px 30px;
-            border: 1px solid #f0f0f0;
+            padding: 10px 30px;
+            border: none;
             border-radius: 15px;
             font-size: 20px;
             background-color: black;
-            color: #f0f0f0;
+            color: #F0F0F0;
         }
 
         button:hover {
             background-color: #686868;
         }
 
-        #country {
-            border: none;
-            border-radius: 20px;
-            padding: 15px 10px 15px 10px;
-            margin-left: 20px;
-            font-size: 20px;
-        }
+        @media (max-width: 428px) {
+            header {
+                padding: 10px;
+            }
 
-        .update {
-            margin-top: 20px;
-            margin-bottom: 40px;
-            color: #686868;
-        }
+            h1 {
+                font-size: 20px;
+            }
 
-        .item {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+            input[type="text"],
+            input[type="password"],
+            select,
+            input[type="date"] {
+                font-size: 14px;
+                padding: 10px;
+            }
 
-        .check {
-            margin-top: 40px;
-        }
+            .shopping {
+                justify-content: left;
+                font-size: 14px;
+            }
 
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            border: 3px solid gray;
-            margin: 10px;
-        }
+            p {
+                font-size: 14px;
+            }
 
-        p {
-            margin: 20px;
-            font-weight: bold;
-        }
-
-        #name {
-            border: 1px solid gray;
-            border-radius: 10px;
-            padding: 15px;
-            display: inline-block;
-            margin-top: 20px;
-            margin-right: 10px;
-            width: 200px;
-        }
-
-        #first-name {
-            border: 1px solid gray;
-            border-radius: 10px;
-            padding: 15px;
-            display: inline-block;
-            margin-top: 10px;
-            margin-right: 10px;
-            width: 200px;
-        }
-
-        #passward {
-            display: flex;
-            border: 1px solid gray;
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 20px;
-            width: 447px;
-        }
-
-        #shopping {
-            display: flex;
-            border: 1px solid gray;
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 5px;
-            width: 478px;
-        }
-
-        .shopping {
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        #birth {
-            display: flex;
-            border: 1px solid gray;
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 20px;
-            width: 447px;
+            button {
+                font-size: 16px;
+                padding: 8px 24px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="nike">
-            <img src="imgs/nike.png" width="100px">
+            <img src="imgs/nike.png" width="80px" alt="Nike Logo">
         </div>
         <h1>이제 나이키 멤버가 되어볼까요?</h1>
         <div class="email">
@@ -173,18 +149,17 @@
                 <div class="shopping">
                     쇼핑 기본 설정
                 </div>
-                    <select name="" id="shopping">
-                        <option value="GH">남성용</option>
-                        <option value="GH">여성용</option>
-                        <option value="GH">선택안함</option>
-                    </select>
+                <select name="" id="shopping">
+                    <option value="male">남성용</option>
+                    <option value="female">여성용</option>
+                    <option value="none">선택안함</option>
+                </select>
                 <input type="date" placeholder="생년월일" name="username" id="birth" required>
             </form>
         </div>
-        </div>
         <div class="check">
             <form method="post">
-                <p><label><input type="checkbox" name="ch" value="나이키의 개인정보 처리방침 및 이용약관에 동의합니다." required>나이키의 개인정보 처리방침 및 이용약관에 동의합니다.</label></p>
+                <p><label><input type="checkbox" name="ch" value="agree" required>나이키의 개인정보 처리방침 및 이용약관에 동의합니다.</label></p>
             </form>
         </div>
         <div class="button-container">
