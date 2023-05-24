@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이키에 오신걸 환영합니다.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            height: 100%;
+            margin-top: 100px;
+        }
+
+        .nike {
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .change {
+            margin-top: 20px;
+        }
+
+        .passward {
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .passward input {
+            width: 100%;
+            padding: 20px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .privacy {
+            margin-top: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 30px 10px 30px;
+            border: 1px solid #f0f0f0;
+            border-radius: 15px;
+            font-size: 20px;
+            background-color: black;
+            color: #f0f0f0;
+        }
+
+        button:hover {
+            background-color: #686868;
+        }
+
+        #country {
+            border: none;
+            border-radius: 20px;
+            padding: 15px 10px 15px 10px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .update {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            color: #686868;
+        }
+
+        .item {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .check {
+            margin-top: 40px;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            border: 3px solid gray;
+            margin: 10px;
+        }
+
+        p {
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        #name {
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        #first-name {
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            width: 200px;
+        }
+
+        #passward {
+            display: flex;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            width: 447px;
+        }
+
+        #shopping {
+            display: flex;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 5px;
+            width: 478px;
+        }
+
+        .shopping {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #birth {
+            display: flex;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            width: 447px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nike">
+            <img src="imgs/nike.png" width="100px">
+        </div>
+        <h1>이제 나이키 멤버가 되어볼까요?</h1>
+        <div class="email">
+            <form action="">
+                <input type="text" placeholder="이름" name="username" id="name" required>
+                <input type="text" placeholder="성" name="username" id="first-name" required>
+                <input type="password" placeholder="비밀번호" name="username" id="passward" required>
+                <div class="shopping">
+                    쇼핑 기본 설정
+                </div>
+                    <select name="" id="shopping">
+                        <option value="GH">남성용</option>
+                        <option value="GH">여성용</option>
+                        <option value="GH">선택안함</option>
+                    </select>
+                <input type="date" placeholder="생년월일" name="username" id="birth" required>
+            </form>
+        </div>
+        </div>
+        <div class="check">
+            <form method="post">
+                <p><label><input type="checkbox" name="ch" value="나이키의 개인정보 처리방침 및 이용약관에 동의합니다." required>나이키의 개인정보 처리방침 및 이용약관에 동의합니다.</label></p>
+            </form>
+        </div>
+        <div class="button-container">
+            <a href="main.html"><button type="submit">계속</button></a>
+        </div>
+    </header>
+</body>
+</html>
