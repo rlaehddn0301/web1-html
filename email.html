@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이키에 오신걸 환영합니다.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            height: 100%;
+            margin-top: 100px;
+        }
+
+        .nike {
+            display: flex;
+            margin-bottom: 70px;
+        }
+
+        .change {
+            margin-top: 20px;
+        }
+
+        .email {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .email input {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            background-color: transparent;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .email input:hover {
+            border: 2px solid #000000;
+        }
+
+
+        .privacy {
+            margin-top: 40px;
+        }
+
+        .button-container {
+            justify-content: center;
+            display: flex;
+        }
+
+        button {
+            padding: 10px 30px 10px 30px;
+            background-color: black;
+            color: #f0f0f0;
+            border: none;
+            border-radius: 15px;
+            margin-top: 100px;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: #737373;
+            border: none;
+        }
+
+        #country {
+            border: none;
+            border-radius: 20px;
+            padding: 15px 10px 15px 10px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nike">
+            <img src="imgs/nike.png" width="100px">
+        </div>
+        <h1>가입 또는 로그인을 위해 이메일을 입력하세요.</h1>
+        <div class="change">국적을 선택하세요.
+            <select name="country" id="country" onclick="country()">
+                <option value="GH">대한민국</option>
+                <option value="GH">멕시코</option>
+                <option value="GH">캐나다</option>
+                <option value="GH">영국</option>
+                <option value="GH">중국</option>
+                <option value="GH">러시아</option>
+                <option value="US">미국</option>
+                <option value="JP">일본</option>
+            </select>
+        </div>
+        <div class="email">
+            <form action="main.html">
+                <input type="text" placeholder="이메일" name="username" id="username" required>
+            </form>
+        </div>
+        <div class="privacy">
+            <p>계속 진행하면 나이키의 개인정보 처리방침<br>
+                및 이용약관에 동의하게 됩니다.</p>
+        </div>
+        <div class="button-container">
+            <a href="checkbox.html"><button type="submit">계속</button></a>
+        </div>
+    </header>
+</body>
+</html>
