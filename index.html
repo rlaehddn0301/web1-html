@@ -4,24 +4,321 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마진 패딩</title>
+    <title>멘토링 기록</title>
 </head>
 <style>
-    a {
-        text-decoration-style: none;
-        color: blueviolet;
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 200vh;
     }
+
+    .head-1 {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .header-1 {
+        background-color: #F5F5F5;
+        justify-content: left;
+        padding: 10px;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .top {
+        padding: 20px;
+    }
+
+    .head-2 {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .header-2 {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 20px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+
+    .nike {
+        width:50px;
+    }
+
+    .nike-old {
+        width:40px;
+        margin-left: 30px;
+    }
+
+    .nk {
+        display: inline;
+        left: -100px;
+        width: 50px;
+    }
+
+    .N {
+        justify-content: left;
+    }
+
+    .span-1 {
+        color: #545454;
+    }
+
+    .span-2 {
+        margin: 0px 50px 0px 50px;
+        color: #545454;
+    }
+
+    .span-3 {
+        color: #545454;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    .span-4 {
+        color: #545454;
+        font-size: 11px;
+        border-bottom: 1px solid #545454;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .box-1 {
+        position: relative;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    .box-2 {
+        margin-top: -50px;
+    }
+
+    .box-3 {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    
+    .jdi-1 {
+        margin: 40px 20px 40px 40px;
+        border-radius: 40px;
+        padding: 30px;
+        background-color: #F5F5F5;
+        width: 250px;
+        align-items: center;
+    }
+
+    .jdi-2 {
+        margin: 40px 20px 40px 40px;
+        border-radius: 40px;
+        padding: 30px;
+        background-color: #E95720;
+        width: 250px;
+        align-items: center;
+    }
+
+    .jdi-3 {
+        margin: 40px 20px 40px 40px;
+        border-radius: 40px;
+        padding: 30px;
+        background-color: #018153;
+        width: 250px;
+        align-items: center;
+    }
+
+    .jdi-4 {
+        margin: 40px 20px 40px 40px;
+        border-radius: 40px;
+        padding: 30px;
+        background-color: #00C7D9;
+        width: 250px;
+        align-items: center;
+    }
+
+    .jdi-5 {
+        margin: 40px 20px 40px 40px;
+        border-radius: 40px;
+        padding: 30px;
+        background-color: #DE0111;
+        width: 250px;
+        align-items: center;
+    }
+
+    .jdi-6 {
+        margin: 40px 20px 40px 40px;
+        border-radius: 40px;
+        padding: 30px;
+        border: 5px solid #111111;
+        width: 250px;
+        align-items: center;
+    }
+
+    .padding-1 {
+        margin: 40px;
+        margin-top: -30px;
+        font-size: 20px;
+    }
+
+    .padding {
+        margin: 80px 20px 40px 40px;
+        border-radius: 480px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #111111;
+        color: #F5F5F5;
+        text-align: center;
+    }
+
+    .A {
+        text-decoration: none;
+        color: #111111;
+        font-size: 20px;
+        width: 10%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    footer {
+        margin-top: 100px;
+        padding: 165px;
+        background-color: #111111;
+    }
+
+    .box-1:hover {
+        opacity: 0.8;
+    }
+
+    .box-2:hover {
+        opacity: 0.8;
+    }
+
+    .span-1:hover {
+        color: #111111;
+    }
+
+    .span-2:hover {
+        color: #111111;
+    }
+
+    .span-4:hover {
+        color: #111111;
+    }
+
+    .padding:hover {
+        color: #F5F5F5;
+        background-color: #545454;
+    }
+
+
+    @media (max-width: 768px) {
+        .header-1 {
+            font-size: 3px;
+        }
+        
+    }
+
 </style>
 <body>
-    <ol>
-        <hr>
-        <li><a href="padding.html">05.04 멘토링 패딩</a></li>
-        <li><a href="magin.html">05.04 멘토링 마진</a></li><br>
-        <hr>
-        <li><a href="mentoring05_1.html">05.11 멘토링 로그인 화면</a></li>
-        <li><a href="main.html">05.11 멘토링 나이키 메인화면</a></li>
-        <hr>
-        <li><a href="hover.html">05.18 멘토링 hover</a></li>
-    </ol>
+    <div class="head">
+<div class="head-2">
+    <header class="header-2">
+        <div class="logo">
+            <a href="">
+                <img class="nike" src="imgs/nike3.png" alt="">
+            </a>
+            <a href="">
+                <img class="nike-old" src="imgs/old-nike.png" alt="">
+            </a>
+        </div>
+    </header>
+<div class="head-1">
+    <header class="header-1">
+        <div class="top">
+        <a href="">
+            <span class="span-2">2023</span>
+        </a>
+        <a href="">
+            <span class="span-2">1학년</span>
+        </a>
+        <a href="">
+            <span class="span-2">1학기</span>
+        </a>
+        <a href="">
+            <span class="span-2">멘토링</span>
+        </a>
+        <a href="">
+            <span class="span-2">lesson</span>
+        </a>
+    </div>
+    </header>
+</div>
+    </div>
+    <div class="box">
+        <div class="box-1">
+            <a class="A" href="padding.html">
+                <img class="jdi-1" src="imgs/jdi.png">
+                <h3 class="padding-1">PADDING</h3></a>
+        </div>
+        <div class="box-1">
+            <a class="A" href="magin.html">
+                <img class="jdi-2" src="imgs/jdi.png">
+                <h3 class="padding-1">MAGIN</h3></a>
+        </div>
+        <div class="box-1">
+            <a class="A" href="hover.html">
+                <img class="jdi-3" src="imgs/jdi.png">
+                <h3 class="padding-1">HOVER</h3></a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-2">
+            <a class="A" href="mediaquery.html">
+                <img class="jdi-4" src="imgs/jdi.png">
+                <h3 class="padding-1">MEDIAQUERY</h3></a>
+        </div>
+        <div class="box-2">
+            <a class="A" href="animation.html">
+                <img class="jdi-5" src="imgs/jdi.png">
+                <h3 class="padding-1">ANIMATION</h3></a>
+        </div>
+        <div class="box-2">
+            <a class="A" href="animate.html">
+                <img class="jdi-6" src="imgs/jdi.png">
+                <h3 class="padding-1">ANIMATE</h3></a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-3">
+            <a class="A" href="mentoring05_1.html">
+                <h3 class="padding">자세히 보기</h3></a>
+        </div>
+    </div>
+    <footer></footer>
+
+
+
+
+
+
+
 </body>
 </html>
