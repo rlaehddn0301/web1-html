@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>멘토링 기록</title>
 </head>
 <style>
     html, body {
         margin: 0;
         padding: 0;
-        height: 200vh;
+        height: 160vh;
     }
 
     .head-1 {
@@ -40,21 +42,22 @@
     
     .header-2 {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         background-color: #ffffff;
         padding: 20px;
         font-size: 15px;
         padding: 8px;
     }
 
-
     .nike {
         width:50px;
+        margin: 5px;
+        margin-left: 10px;
     }
 
     .nike-old {
-        width:40px;
-        margin-left: 30px;
+        width:45px;
+        margin-left: 10px;
     }
 
     .nk {
@@ -72,8 +75,10 @@
     }
 
     .span-2 {
-        margin: 0px 50px 0px 50px;
         color: #545454;
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        animation-iteration-count: infinite;
     }
 
     .span-3 {
@@ -90,22 +95,22 @@
 
     .box {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-start;
     }
 
     .box-1 {
         position: relative;
         align-items: center;
-        margin-top: 150px;
+        margin-top: 100px;
     }
 
     .box-2 {
         margin-top: -50px;
+        position: relative;
+        align-items: center;
     }
 
-    .box-3 {
+    .box-4 {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -118,7 +123,6 @@
         padding: 30px;
         background-color: #F5F5F5;
         width: 250px;
-        align-items: center;
     }
 
     .jdi-2 {
@@ -161,7 +165,7 @@
         margin: 40px 20px 40px 40px;
         border-radius: 40px;
         padding: 30px;
-        border: 5px solid #111111;
+        border: 3px solid #111111;
         width: 250px;
         align-items: center;
     }
@@ -197,10 +201,29 @@
         text-decoration: none;
     }
 
-    footer {
+    .footer {
+        background-color: #F5F5F5;
+    }
+
+    .footer-nike {
+        display: flex;
+        justify-content: center;
         margin-top: 100px;
-        padding: 165px;
-        background-color: #111111;
+    }
+
+    .nike-bottom {
+        width: 10%;
+        padding: 50px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .mento {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 
     .box-1:hover {
@@ -229,26 +252,83 @@
     }
 
 
-    @media (max-width: 768px) {
-        .header-1 {
-            font-size: 3px;
+    @media only screen and (max-width: 768px) {
+            .head-1, .head-2 {
+                position: static;
+            }
+
+            .header-1, .header-2 {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .nike {
+                width: 40px;
+                margin: 5px;
+                margin-left: 10px;
+            }
+
+            .nike-old {
+                width: 35px;
+                margin-left: 10px;
+            }
+
+            .box-2 {
+                margin-top: 20px;
+            }
+
+            .jdi-1,
+            .jdi-2,
+            .jdi-3,
+            .jdi-4,
+            .jdi-5,
+            .jdi-6 {
+                margin: 20px 10px;
+                padding: 20px;
+                width: calc(50% - 20px);
+                max-width: none;
+            }
+
+            .padding-1 {
+                margin: 20px;
+                font-size: 24px;
+            }
+
+            .A {
+                font-size: 18px;
+            }
+
+            .footer-nike {
+                margin-top: 100px;
+                flex-direction: row;
+            }
+
+            .nike-bottom {
+                width: 10%;
+                padding: 50px;
+            }
+
+            .mento {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+
+            .mentee {
+                font-size: 18px;
+            }
         }
-        
-    }
 
 </style>
 <body>
     <div class="head">
 <div class="head-2">
     <header class="header-2">
-        <div class="logo">
             <a href="">
                 <img class="nike" src="imgs/nike3.png" alt="">
             </a>
             <a href="">
                 <img class="nike-old" src="imgs/old-nike.png" alt="">
             </a>
-        </div>
     </header>
 <div class="head-1">
     <header class="header-1">
@@ -307,12 +387,22 @@
         </div>
     </div>
     <div class="box">
-        <div class="box-3">
+        <div class="box-4">
             <a class="A" href="mentoring05_1.html">
                 <h3 class="padding">자세히 보기</h3></a>
         </div>
     </div>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-nike">
+            <img class="nike-bottom" src="imgs/nike3.png" alt="">
+            <div class="footer">
+                <ul>
+                    <li class="mento">멘토 : 임승진</li>
+                    <li class="mentee">멘티 : 김동우 정진우 김지훈 신성준</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 
