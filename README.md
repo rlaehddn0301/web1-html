@@ -27,6 +27,51 @@ HTML과 CSS를 활용하여 웹 페이지를 구성하고 스타일링하는 기
 5. CSS 애니메이션과 전환 효과
 6. 자유주제 웹 사이트 디자인
 
+## 이론
+
+멘토링 활동에서 다룰 HTML과 CSS 주제:
+
+1. 월드 와이드 웹(World Wide Web)은 인터넷을 통해 글자, 그림, 음성, 영상 등의 정보를 쉽게 공유하고 접근할 수 있는 시스템.
+2. 월드 와이드 웹은 HTML(HyperText Markup Language)과 CSS(Cascading Style Sheets) 등의 기술을 사용하여 웹 페이지를 생성하고 스타일링한다
+3. Google Chrome: Google에서 개발한 웹 브라우저로, 빠른 속도와 넓은 확장 기능을 제공합니다.
+4. Mozilla Firefox: Mozilla 재단이 개발한 웹 브라우저로, 보안과 개인정보 보호가 강하다.
+5. Microsoft Edge: Microsoft에서 개발한 웹 브라우저로, 이전에는 Internet Explorer로 알려져 있다. 최신 웹 표준을 지원하며, Windows 운영체제에 기본으로 포함.
+6. Safari: Apple에서 개발한 웹 브라우저로, macOS와 iOS 기기에서 사용할 수 있다.
+
+# CSS를 HTML 문서에 추가하는 방법
+
+1. HTML 문서에서 <style> 태그 사용하기:
+
+   <html>
+     <head>
+       <style>
+         /* CSS 코드 작성 */
+       </style>
+     </head>
+     <body>
+       <!-- 웹 페이지 내용 작성 -->
+     </body>
+   </html>
+
+2. 외부에서 CSS 파일 연결하기
+   <html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- 웹 페이지 내용 작성 -->
+  </body>
+</html>
+  
+  2. 인라인 스타일 적용하기
+<html>
+  <body>
+    <h1 style="color: blue; font-size: 24px;">제목</h1>
+    <!-- 웹 페이지 내용 작성 -->
+  </body>
+</html>
+
+
 ## 느낀점
 
 멘토링 활동을 통해 HTML과 CSS에 대한 기초적인 내용을 학습하며 
