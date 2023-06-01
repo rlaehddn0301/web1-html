@@ -40,11 +40,11 @@ HTML과 CSS를 활용하여 웹 페이지를 구성하고 스타일링하는 기
 
 # CSS를 HTML 문서에 추가하는 방법
 
-1. HTML 문서에서 <style> 태그 사용하기:
+### HTML 문서에서 <style> 태그 사용하기:
 
-   -<html>
-     -<head>
-       -<style>
+   <html>
+     <head>
+       <style>
          /* CSS 코드 작성 */
        </style>
      </head>
@@ -53,7 +53,7 @@ HTML과 CSS를 활용하여 웹 페이지를 구성하고 스타일링하는 기
      </body>
    </html>
 
-2. 외부에서 CSS 파일 연결하기
+### 외부에서 CSS 파일 연결하기
    <html>
   <head>
     <link rel="stylesheet" href="style.css">
@@ -63,7 +63,7 @@ HTML과 CSS를 활용하여 웹 페이지를 구성하고 스타일링하는 기
   </body>
 </html>
   
-  2. 인라인 스타일 적용하기
+ ### 인라인 스타일 적용하기
 <html>
   <body>
     <h1 style="color: blue; font-size: 24px;">제목</h1>
